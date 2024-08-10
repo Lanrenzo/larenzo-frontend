@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background: rgb(11, 11, 11);
+    padding: 1rem;
+    background-size: auto;
+    margin: auto;
+    resize: horizontal;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-size: auto;
+}
+nav ul li {
+    display: inline;
+    background-size: auto;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+    display: block;
+}
+nav ul li a:hover{
+    background-color: #575757;
+    border-radius: 5px;
+}
+body{
+    justify-content: center;
+    text-align: center;
+}
+h1{
+    font-size: 70px;
+}
+button {
+    padding-left: 50px;
+    padding-right: 50px;   
+    margin-top: 30px;
+    font-size: 20px;
+    box-decoration-break: initial;
+    background-color: transparent;
+}
+button a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+h3{
+    font-size: 20px;
+    margin-top: 30px;
+}
+form{   
+    box-decoration-break: initial;
+    font-size: 20px;
+    margin-top: 30px;
+}
+form input{
+    color: rgb(217, 220, 223);
+    background-color: transparent;
+    font-size: 15px;
+    height: 30px;
+    width: 300px;
+}
+p a{
+    justify-content: center;
+}
+form div button{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 30px;
+    margin-left: 180px;
+}
