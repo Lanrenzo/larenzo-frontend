@@ -8,44 +8,34 @@
   </head>
   <body>
     <style>
-		tr, td, table, th{
-			border: 1px solid;
+		table, tr, thead, td, th {
+			border: 1px solid red;
 			border-collapse: collapse;
+			padding: 20px;
 		}
-
+		.flex-child {
+			min-width: 30%;
+			height: 80px;
+			background-color: red;
+			margin: 5px;
+			background-image: url("https://i.ytimg.com/vi/9hRjjws206M/sddefault.jpg") ;
+			background-size: contain;
+		}
+		.flex {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: green;
+			min-height: 300px;
+			padding: 5px;
+			overflow: scroll;
+			flex-wrap: wrap;
+		}
 	</style>
-    <a href="https://google.com">Link to Google</a>
-	<img src="https://icons.veryicon.com/png/o/miscellaneous/excellent-road-project/iocn-share.png" alt="A Very Large Image"/>
-    </div>
-
-	<ul>
-		<li>Apple</li>
-		<li>Mango</li>
-		<li>Banana</li>
-	</ul>
-
-	<div style="background-color: red;">Test me</div>
-	<span style="background-color: blue;">Test me</span>
-
-	<ol>
-		<li>Apple</li>
-		<li>Mango</li>
-		<li>Banana</li>
-	</ol>
-
-	<!-- <table>
-		<tr>
-			<th>NAME</th>
-			<th>AGE</th>
-		</tr>
-		<tr>
-			<td>Abdul Warith</td>
-			<td>17</td>
-		</tr>
-		<tr>
-			<td>Abdul Warith</td>
-			<td>17</td>
-		</tr>
-	</table> -->
+	<div class="flex">
+		<div class="flex-child">
+		</div>
+		
+	</div>
   </body>
 </html>
