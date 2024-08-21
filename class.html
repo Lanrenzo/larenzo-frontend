@@ -1,22 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    p, strong{
+        color: #2e4b53;
+    }
+    #myName{
+        background-color: #ced477;
+    }
+    .myName{
+        background-color: #6447b5 !important;
+        
+    }
+    #myName:hover{
+        background-color: rgb(61, 165, 165);
+    }
+    .myName:hover{
+        
+    }
+    table, tr, th, td{
+        border: 1px solid rgb(71, 124, 112);
+        border-collapse: collapse;
+        padding: 10px;
+    }
+    .cars{
+        background-color: #2e4b53;
+        display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 300px;
+		padding: 0px;
+		overflow: scroll;
+		
+    }
+    .lambo{
+        background-image: url("https://th.bing.com/th?id=OIP.8Eg_CW8qomq2WYP6vTlchwHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2");
+        min-width: 40%;
+		height: 250px;
+		background-color: rgb(0, 200, 255);
+		margin: 5px;
+		background-size: cover;
+    }
+</style>
 <body>
-    <p>Lorem <b>ipsum</b> dolor sit amet consectetur adipisicing elit . <i>Quisquam</i> sit cupiditate, provident asperiores <em>ducimus</em> illo laudantium obcaecati temporibus ullam, earum quaerat sequi eveniet iure nostrum minima perspiciatis, quasi ea nihil.</p>
-    <p>Lorem <small>ipsum</small> dolor sit amet consectetur <del>adipisicing</del> elit. Consequuntur <ins>reiciendis</ins> excepturi <sub>alias</sub>? Rerum eligendi animi sit asperiores debitis dolorem aperiam <sup>amet</sup>? Repellendus iure voluptas labore sed quis. Sit, alias dolorem.</p>
-    <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ipsam vitae laboriosam corporis quasi adipisci doloremque veritatis modi quia nobis? Excepturi repellendus quos tempore quo necessitatibus corporis quam neque reiciendis?</strong>
+    
+    <marquee bgcolor="blue" behavior="alternate" direction="right" scrollamount="30">
+        <h1>Techlava Class</h1>
+    </marquee><br><br>
+    <details>
+    <div id="myName">My name is Lanre</div><br><br>
+    <span class="myName" id="myName">My name is <b>lanre</b></span><br><br>
+    <p>Lorem <b>ipsum</b> dolor sit amet consectetur adipisicing elit . <i>Quisquam</i> sit cupiditate, provident
+        asperiores <em>ducimus</em> illo laudantium obcaecati temporibus ullam, earum quaerat sequi eveniet iure nostrum
+        minima perspiciatis, quasi ea nihil.</p><br>
+    <p>Lorem <small>ipsum</small> dolor sit amet consectetur <del>adipisicing</del> elit. Consequuntur
+        <ins>reiciendis</ins> excepturi <sub>alias</sub>? Rerum eligendi animi sit asperiores debitis dolorem aperiam
+        <sup>amet</sup>? Repellendus iure voluptas labore sed quis. Sit, alias dolorem.</p><br>
+    <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ipsam vitae laboriosam corporis quasi adipisci
+        doloremque veritatis modi quia nobis? Excepturi repellendus quos tempore quo necessitatibus corporis quam neque
+        reiciendis?</strong><br>
     <table>
         <tr>
             <th>NAME</th>
-            <th>AGE</th>    
+            <th>AGE</th>
         </tr>
         <tr>
             <td>Folami Abdulwarith</td>
             <td>18</td>
+        </tr>
+        <tr>
+            <td>Folami </td>
+            <td>15</td>
         </tr>
     </table>
     <ul>
@@ -27,7 +86,16 @@
         <li>Apple</li>
         <dd>Potatoe</dd>
     </dl>
-    <form>
+    <div class="cars">
+        <div class="lambo"></div>
+        <div class="lambo"></div>
+        <div class="lambo"></div>
+        <div class="lambo"></div>
+        <div class="lambo"></div>
+        <div class="lambo"></div>
+    </div>
+    
+    <!--
         <input type="button" class="input"><br>
         <input type="checkbox"><br>
         <input type="color"><br>
@@ -36,8 +104,8 @@
         <input type="email"><br>
         <input type="file">
         <input type="hidden"><br>
-        <!-- Add an image source -->
-        <input type="image" src="" alt=""><br> 
+         
+        <input type="image" src="" alt=""><br>
         <input type="month" name="" id=""><br>
         <input type="number"><br>
         <input type="password">
@@ -50,6 +118,7 @@
         <input type="time"><br>
         <input type="url"><br>
         <input type="week"><br>
-    </form>
+     -->
 </body>
+</details>
 </html>
