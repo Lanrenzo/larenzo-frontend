@@ -11,7 +11,6 @@
             display: flex;
             justify-content: center;
             background-color: rgb(233, 232, 232);
-           
         }
         .Login{
             padding: 20px;
@@ -39,11 +38,16 @@
             border: 0px;
             border-radius: 10px;
         }
+        #Newaccount{
+            background-color: green; 
+            color: white;
+            width: 220px;
+        }
     </style>
 <div class="d-flex">
 <div class="">
-    <div>
-        <img width="250px" src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" style="text-align: center;">
+    <div style="text-align: center;">
+        <img width="250px" src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg">
     </div>
     <div class="Login">
     <div style="text-align: center;">Login to Facebook</div><br><br>
@@ -59,7 +63,11 @@
         Forgot password
         </a>
     </div><br>
-    <input type="button" value="Create new account" style="background-color: green; color: white; justify-content: center; width: 220px;">
+    <div style="justify-content: center; display: flex;">
+    <button id="Newaccount">
+        Create new account
+    </button>
+    </div>
    `</div>
 </div>
 </div>
