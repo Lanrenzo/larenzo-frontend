@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body onload="" id="#main_body">
+    <style>
+      .my_div {
+        padding: 10px;
+        background-color: red;
+        color: white;
+      }
+    </style>
+    <div class="my_div">
+      <span>BIG MAN</span>
+    </div>
+    <!-- <button onclick="changeButtonColor">Change Colour</button> -->
+    <input
+      type="text"
+      placeholder="Input Name"
+      id="name"
+      style="background-color: blue"
+    />
+    <button onclick="printName('My name is')">My Name</button>
+    <script>
+      function getAnswerByElemnt(num1){
+        
+        const answer = num1 * 3;
+        return "Total number of " + num1 + " multiplied by 3 is " + answer;
+      }
+
+      console.log(getAnswerByElemnt(1000));
+
+      
+      function getX(a, b, c){
+        const x1= (-b + Math.sqrt(b*b + 4 * a* c))/(2 * a) ;
+        const x2= (-b - Math.sqrt(b*b + 4 * a* c))/(2 * a) ;
+        return "x is " + x1 + " and " + x2; 
+      }
+
+      console.log(getX(1, -2, 3));
+
+      const person = {
+        firstName: "John",
+        lastName: "Doe",
+        oldFirstName: "Alex",
+        oldLastName: "Oldoe",
+        age: 51,
+        eyeColor: "blue",
+        getFullName() {
+        const totalFullName = {
+            fullName: this.firstName + " " + this.lastName,
+            oldFullName: this.oldFirstName + " " + this.oldLastName,
+            value: "N3400.00"
+        }
+            return totalFullName;
+        },
+      };
+
+      console.log("My Name is ", person.getFullName().fullName);
+      console.log("My Old Name is ", person.getFullName().oldFullName);
+      console.log("My Value is ", person.getFullName().value);
+      // Document Object Model:
+      function printName(namePrefic) {
+        const nameInput = document.getElementById("name").value;
+        console.log(namePrefic, nameInput);
+      }
+
+      {
+        // Types in JavaScript
+        // String, Number, Boolean, Object, Arrays, Null, NAN, Undefined
+        let stringExample = "My Name 09090";
+        let numberExample = 10;
+        let booleanExample = false;
+        let ObjectExample = {};
+        let arrayExample = ["apples", "banans", "oranges"];
+        let nullExample = null;
+        // let undefinedExample;
+
+        // +,- *, /, ++, --, %,
+        // =
+        //<,> <=,>=, !=, ==, ===
+        // && ||
+
+        let x = "104P";
+        let y = 104;
+        // == Compare Value
+        // === Compare Type & Value
+        let z = x * y;
+
+        // Coercion: Convert Variables to the same Type
+        // Concatenation: Join Strings Together
+        console.log("Z is", z);
+      }
+    </script>
+  </body>
+</html>
