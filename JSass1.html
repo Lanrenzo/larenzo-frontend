@@ -7,11 +7,22 @@
 </head>
 <body>
     <script>
-        function getFactorial(num1){
-            const factorial = num1 * (num1 - 1);
-            return "Factorial "+num1+ " is " + factorial; 
+        function getMultiplication(i){
+            let mutiplication = 1
+        for(num = i;num > 0;num--){
+            multiplicaion = mutiplication *= num
         }
-        console.log(getFactorial(2))
+        return i
+        }
+        console.log("Factorial for "+ getMultiplication(5) + " is " + multiplicaion)
+        console.log("Factorial for "+ getMultiplication(10) + " is " + multiplicaion)
+       /* let addition = 1
+        for(num = 10; num > 0;num--){
+            console.log(num+ " +")
+            addition = addition += num
+        }
+
+        console.log("Total is " + addition)*/
     </script>
 </body>
 </html>
