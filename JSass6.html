@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getValueForPerimeter(l, b){
+            let p = 2*(l + b);
+            return p;
+        }
+        function getValueForArea(l1, b2){
+            let a = l1 *b2;
+            return a;
+        }
+        function getValueForDiagonal(a3, b3){
+            let d  = Math.sqrt((a3 * a3) + (b3 * b3));
+            return d;
+        }
+        function getAnswerByElemnt(){
+            return "Perimeter is " + getValueForPerimeter(8, 3) + ", Area is " + getValueForArea(3, 5) + " and diagonal is " + getValueForDiagonal(3, 4)
+        }
+        console.log(getAnswerByElemnt())
+    </script>
+</body>
+</html>

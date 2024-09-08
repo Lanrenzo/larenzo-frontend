@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getValueInCelsius(c){
+            let mul = 33.8;
+            Fehrenheit = mul * c;
+            return Fehrenheit;
+        }
+        
+
+        function getValueInFehrenheit(f){
+            Celsius = (f - 30)/2;
+            return Celsius;
+        }
+        
+
+        function getValueInKelvin(K){
+            kelvin = 273 + K;
+            return kelvin;
+        }
+        function getAnswerByElemnt(){
+            return "Value of temperature in Fehrenheit is " + getValueInCelsius(10) + "F, "+ "value of temperature in Celsius is " + getValueInFehrenheit(10) + "C and " + "value of temperature in Celsius is "  + getValueInKelvin(10) + "K"
+        }
+        console.log(getAnswerByElemnt());
+    </script>
+</body>
+</html>

@@ -12,16 +12,17 @@
         const x = Math.floor(Math.random() * 6) + 2;
         const y = Math.floor(Math.random() * 10) + 2;
         function getMultiplication(i) {
-            let mutiplication = 1
+            let mul = 1
             for (num = i; num > 0; num--) {
-                multiplicaion = mutiplication *= num
+                mul = mul * num
             }
-            return i
+            return mul
         }
-        console.log("Factorial for x which is "+ getMultiplication(x) + " is " + multiplicaion)
+        console.log(getMultiplication(3))
+        /*console.log("Factorial for x which is "+ getMultiplication(x) + " is " + multiplicaion)
         console.log("Factorial for y which is "+ getMultiplication(y) + " is " + multiplicaion)
         add = x + y
-        console.log("The addition of " + x + " and " + y + " is " + add)
+        console.log("The addition of " + x + " and " + y + " is " + add)*/
     </script>
 </body>
 
